@@ -16,11 +16,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Entity
 public class FoodCart {
 	
 	@Id
@@ -33,5 +33,5 @@ public class FoodCart {
 	
 	
 	@OneToMany(targetEntity = Item.class,cascade = CascadeType.ALL)
-	private List<Item> items;
+	private List<Item> itemList;
 }

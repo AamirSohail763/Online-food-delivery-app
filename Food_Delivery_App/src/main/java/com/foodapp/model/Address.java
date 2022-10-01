@@ -10,20 +10,21 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@Entity
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Entity
 public class Address {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer addressId;
-	private String buildingName;
-	private String streetNo;
+	private String area;
 	private String city;
 	private String state;
+	private String country;
 	private String pincode;
 }
 

@@ -15,21 +15,26 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@Entity
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Entity
 public class OrderDetails {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer orderId;
-	private LocalDateTime datetime;
+	private LocalDateTime orderDate;
 	private String orderStatus;
+	
+	
 	@OneToOne(cascade = CascadeType.ALL)
 	@JsonIgnore
 	private FoodCart cart;
+	
+	
 	@OneToOne(cascade = CascadeType.ALL)
 	@JsonIgnore
 	private  Bill bill;

@@ -13,21 +13,21 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Entity
 public class Customer {
 	
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer customerId;
-	private String name;
+	private String fullName;
 	private Integer age;
 	private String gender;
-	private String mobileNo;
+	private String mobileNumber;
 	private String email;
 	
 	

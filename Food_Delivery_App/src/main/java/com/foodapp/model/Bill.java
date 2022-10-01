@@ -14,18 +14,19 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@Entity
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Entity
 public class Bill {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer billId;
-	private LocalDateTime datetime;
-	private Double totalAmount;
+	private LocalDateTime billDate;
+	private Double totalCost;
 	private Integer totalItem;
 	
 	

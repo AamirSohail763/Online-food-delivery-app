@@ -18,11 +18,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Entity
 public class Restaurant {
 	
 	
@@ -31,7 +31,7 @@ public class Restaurant {
 	private Integer restaurantId;
 	private String restaurantName;
 	private String managerName;
-	private String contactNo;
+	private String contactNumber;
 	
 	
 	@JsonIgnore
@@ -39,5 +39,5 @@ public class Restaurant {
 	private Address address;
 	
 	@OneToMany(targetEntity = Item.class,cascade = CascadeType.ALL)
-	private List<Item> item = new ArrayList<>();
+	private List<Item> itemList = new ArrayList<>();
 }
