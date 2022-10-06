@@ -7,6 +7,6 @@ import com.foodapp.model.FoodCart;
 
 
 @Repository
-public interface CartDAO extends JpaRepository<FoodCart, Integer>{
+public interface FoodCartDAO extends JpaRepository<FoodCart, Integer>{
 
 }

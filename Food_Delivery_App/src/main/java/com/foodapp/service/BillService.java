@@ -2,6 +2,7 @@ package com.foodapp.service;
 
 import com.foodapp.exceptions.BillException;
 import com.foodapp.exceptions.CustomerException;
+import com.foodapp.exceptions.ItemException;
 import com.foodapp.model.Bill;
 
 public interface BillService {
@@ -10,11 +11,11 @@ public interface BillService {
 	
 	public Bill updateBill(Bill bill)throws BillException;
 	
-	public Bill removeBill(Bill bill)throws BillException;
+	public Bill removeBill(Integer billID)throws BillException;
 	
 	public Bill viewBill(Integer billId)throws BillException;
 	
-	public String generateBillById(Integer customerId)throws BillException,CustomerException;
+	public String generateTotalBillById(Integer customerId)throws ItemException,CustomerException;
 	
 
 }

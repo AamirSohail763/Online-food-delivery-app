@@ -13,10 +13,13 @@ import javax.persistence.OneToOne;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
@@ -34,4 +37,7 @@ public class FoodCart {
 	
 	@OneToMany(targetEntity = Item.class,cascade = CascadeType.ALL)
 	private List<Item> itemList;
+
+
+
 }

@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.foodapp.exceptions.CustomerException;
 import com.foodapp.exceptions.OrderException;
+import com.foodapp.model.Item;
 import com.foodapp.model.OrderDetails;
 
 public interface OrderDetailService {
@@ -16,6 +17,6 @@ public interface OrderDetailService {
 	
 	public OrderDetails viewOrder(Integer orderId)throws OrderException;
 	
-	public List<OrderDetails> viewAllOrdersByCustomer(Integer customerId)throws OrderException,CustomerException;
+	public List<Item> viewAllOrdersByCustomer(Integer customerId)throws OrderException,CustomerException;
 
 }
