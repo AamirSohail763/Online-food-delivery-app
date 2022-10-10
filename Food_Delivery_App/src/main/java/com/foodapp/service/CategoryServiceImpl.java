@@ -37,7 +37,7 @@ public class CategoryServiceImpl implements CategoryService{
 		if(opt.isPresent()) {
 			return categoryDAO.save(category);
 		}else {
-			throw new CategoryException("No such category found..");
+			throw new CategoryException("No such Category found..");
 		}
 	}
 

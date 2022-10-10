@@ -49,14 +49,14 @@ public class BillServiceImpl implements BillService{
 
 
 	@Override
-	public Bill removeBill(Integer billID) throws BillException {
-		Optional<Bill> opt = billDAO.findById(billID);
+	public Bill removeBill(Integer billId) throws BillException {
+		Optional<Bill> opt = billDAO.findById(billId);
 		if(opt.isPresent()) {
 			Bill bill = opt.get();
 			billDAO.delete(bill);
 			return bill;
 		}else {
-			throw new BillException("Bill not found with ID: "+billID);
+			throw new BillException("Bill not found with ID: "+billId);
 		}
 		
 	}

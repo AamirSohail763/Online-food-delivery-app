@@ -11,7 +11,7 @@ public interface BillService {
 	
 	public Bill updateBill(Bill bill)throws BillException;
 	
-	public Bill removeBill(Integer billID)throws BillException;
+	public Bill removeBill(Integer billId)throws BillException;
 	
 	public Bill viewBill(Integer billId)throws BillException;
 	
