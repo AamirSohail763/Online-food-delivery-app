@@ -13,7 +13,7 @@
 
 ## Modules
 
-* Login, Logout Module
+* Signup, Login/Logout Module
 * Restaurant Module
 * Customer Module
 * Order and Items Module
