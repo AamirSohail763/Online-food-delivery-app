@@ -61,9 +61,9 @@
 ```
     {
         
-  "password": "Aamir@123",
-  "userId": 1,
-  "userName": "AamirSohail"
+        "password": "Aamir@123",
+        "userId": 1,
+        "userName": "AamirSohail"
     }
 ```
 
@@ -71,7 +71,7 @@
 
 ```
     {
-        UserSession(id=2, userId=1, UUID=000267, timeStamp=2022-11-14T14:12:43.129790400)
+         UserSession(id=2, userId=1, UUID=000267, timeStamp=2022-11-14T14:12:43.129790400)
 
     }
 ```
